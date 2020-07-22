@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D5A288E23CE1AFB00C5A4C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A288D23CE1AFB00C5A4C0 /* main.cpp */; };
+		5D2CCF4F2419AFC2007D4682 /* tCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CCF4D2419AFC2007D4682 /* tCode.cpp */; };
 		5D895AD223D615AD0030AE19 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D895AD023D615AD0030AE19 /* tokenizer.cpp */; };
 		5D895AD523D618530030AE19 /* token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D895AD323D618530030AE19 /* token.cpp */; };
 		5D895AD823D631A90030AE19 /* symbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D895AD623D631A90030AE19 /* symbol.cpp */; };
 		5D895ADB23D633CA0030AE19 /* symbol_table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D895AD923D633CA0030AE19 /* symbol_table.cpp */; };
+		5D8A90B523FF42BF00C98941 /* sar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D8A90B323FF42BF00C98941 /* sar.cpp */; };
+		5DC0E3C723DBB649000819A2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A288D23CE1AFB00C5A4C0 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +29,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D25AEB42406F5D500FEDF09 /* semanticsFinalTest.kxi */ = {isa = PBXFileReference; lastKnownFileType = text; path = semanticsFinalTest.kxi; sourceTree = "<group>"; };
+		5D2CCF4D2419AFC2007D4682 /* tCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tCode.cpp; sourceTree = "<group>"; };
+		5D2CCF4E2419AFC2007D4682 /* tCode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tCode.hpp; sourceTree = "<group>"; };
+		5D2CCF502419B676007D4682 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		5D31432C24C7B522004D62CC /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		5D5A288A23CE1AFB00C5A4C0 /* lexical */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lexical; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D5A288D23CE1AFB00C5A4C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		5D5A289A23CE5D9900C5A4C0 /* test.kxi */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.kxi; sourceTree = "<group>"; };
+		5D5A288D23CE1AFB00C5A4C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		5D895AD023D615AD0030AE19 /* tokenizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cpp; sourceTree = "<group>"; };
 		5D895AD123D615AD0030AE19 /* tokenizer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tokenizer.hpp; sourceTree = "<group>"; };
 		5D895AD323D618530030AE19 /* token.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = token.cpp; sourceTree = "<group>"; };
@@ -38,6 +44,9 @@
 		5D895AD723D631A90030AE19 /* symbol.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = symbol.hpp; sourceTree = "<group>"; };
 		5D895AD923D633CA0030AE19 /* symbol_table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = symbol_table.cpp; sourceTree = "<group>"; };
 		5D895ADA23D633CA0030AE19 /* symbol_table.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = symbol_table.hpp; sourceTree = "<group>"; };
+		5D8A90B323FF42BF00C98941 /* sar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sar.cpp; sourceTree = "<group>"; };
+		5D8A90B423FF42BF00C98941 /* sar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sar.hpp; sourceTree = "<group>"; };
+		5DC0E3C623DBB5EE000819A2 /* test.kxi */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.kxi; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				5D5A288C23CE1AFB00C5A4C0 /* lexical */,
-				5D5A288B23CE1AFB00C5A4C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +73,16 @@
 				5D5A288A23CE1AFB00C5A4C0 /* lexical */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		5D5A288C23CE1AFB00C5A4C0 /* lexical */ = {
 			isa = PBXGroup;
 			children = (
+				5D5A288B23CE1AFB00C5A4C0 /* Products */,
 				5D895ADE23D661030030AE19 /* Resource */,
 				5D895ADD23D660C70030AE19 /* headers */,
 				5D895ADC23D660BE0030AE19 /* source */,
-				5D5A288D23CE1AFB00C5A4C0 /* main.cpp */,
 			);
 			path = lexical;
 			sourceTree = "<group>";
@@ -85,6 +94,9 @@
 				5D895AD323D618530030AE19 /* token.cpp */,
 				5D895AD923D633CA0030AE19 /* symbol_table.cpp */,
 				5D895AD623D631A90030AE19 /* symbol.cpp */,
+				5D8A90B323FF42BF00C98941 /* sar.cpp */,
+				5D5A288D23CE1AFB00C5A4C0 /* main.cpp */,
+				5D2CCF4D2419AFC2007D4682 /* tCode.cpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -92,10 +104,13 @@
 		5D895ADD23D660C70030AE19 /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				5D2CCF4E2419AFC2007D4682 /* tCode.hpp */,
 				5D895AD123D615AD0030AE19 /* tokenizer.hpp */,
 				5D895AD423D618530030AE19 /* token.hpp */,
-				5D895ADA23D633CA0030AE19 /* symbol_table.hpp */,
+				5D8A90B423FF42BF00C98941 /* sar.hpp */,
 				5D895AD723D631A90030AE19 /* symbol.hpp */,
+				5D2CCF502419B676007D4682 /* global.h */,
+				5D895ADA23D633CA0030AE19 /* symbol_table.hpp */,
 			);
 			path = headers;
 			sourceTree = "<group>";
@@ -103,7 +118,9 @@
 		5D895ADE23D661030030AE19 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				5D5A289A23CE5D9900C5A4C0 /* test.kxi */,
+				5DC0E3C623DBB5EE000819A2 /* test.kxi */,
+				5D31432C24C7B522004D62CC /* README.txt */,
+				5D25AEB42406F5D500FEDF09 /* semanticsFinalTest.kxi */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -164,10 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5A288E23CE1AFB00C5A4C0 /* main.cpp in Sources */,
+				5D8A90B523FF42BF00C98941 /* sar.cpp in Sources */,
 				5D895ADB23D633CA0030AE19 /* symbol_table.cpp in Sources */,
 				5D895AD823D631A90030AE19 /* symbol.cpp in Sources */,
 				5D895AD223D615AD0030AE19 /* tokenizer.cpp in Sources */,
+				5DC0E3C723DBB649000819A2 /* main.cpp in Sources */,
+				5D2CCF4F2419AFC2007D4682 /* tCode.cpp in Sources */,
 				5D895AD523D618530030AE19 /* token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

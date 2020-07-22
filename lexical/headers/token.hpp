@@ -17,6 +17,7 @@ class Token{
 public:
     std::string lexeme;
     std::string type;
+    std::string line;
     int lineNumber;
     Token();
     Token (std::string lexeme, std::string type, int lineNumber);

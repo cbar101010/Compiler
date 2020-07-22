@@ -12,18 +12,24 @@
 #include <stdio.h>
 #include <string>
 #include <unordered_map>
+#include <vector>
 class Symbol{
 public:
     
-    int symID;
-
+    std::string symID;
     std::string scope;
     std::string lexeme;
     std::string kind;
-    
+    std::vector<std::string> param;
     std::unordered_map<std::string, std::string> data;
-    
+    int size = 0;
+    int offset;
     Symbol(std::string scope, std::string lexeme, std::string kind, std::unordered_map<std::string, std::string> data);
+    Symbol();
+    std::string getData(std::string val);
+    bool isFunction();
+    bool isArray();
+    
 };
 
 #endif /* symbol_hpp */

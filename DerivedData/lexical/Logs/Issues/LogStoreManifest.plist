@@ -6,31 +6,33 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>09B055DD-B42F-41BF-9A4F-9603C154403F</key>
+		<key>20EB1C8E-B9FE-480B-A12E-4EA47402F9A5</key>
 		<dict>
 			<key>className</key>
-			<string>IDEActivityLogSection</string>
+			<string>IDEActivityLogMajorGroupSection</string>
 			<key>documentTypeString</key>
 			<string>&lt;nil&gt;</string>
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>09B055DD-B42F-41BF-9A4F-9603C154403F.xcactivitylog</string>
+			<string>20EB1C8E-B9FE-480B-A12E-4EA47402F9A5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
 			<string>lexical-fxmomgyahsxhngeamwsozjyrcciu</string>
 			<key>timeStartedRecording</key>
-			<real>601344063.53055406</real>
+			<real>617038655.93210196</real>
 			<key>timeStoppedRecording</key>
-			<real>601344064.42879701</real>
+			<real>617038656.01920605</real>
 			<key>title</key>
 			<string>Build target lexical</string>
 			<key>uniqueIdentifier</key>
-			<string>09B055DD-B42F-41BF-9A4F-9603C154403F</string>
+			<string>20EB1C8E-B9FE-480B-A12E-4EA47402F9A5</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
